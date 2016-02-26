@@ -1,0 +1,90 @@
+html, body{
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background: #BDC3C7;
+    overflow-x: hidden;
+}
+
+#gameContent{
+	width: 460px;
+	background: #ECF0F1;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: calc(50% - 230px);
+}
+
+#logo{
+	width: 400px;
+	height: 280px;
+	color: #e58929;
+    font-size: 120px;
+    font-weight: 700;
+    font-family: "Courier New";
+    text-align: center;
+    line-height: 200px;
+    margin: auto;
+}
+#logo span{
+	font-size: 30px;
+	font-weight: normal;
+	font-family: "Arial";
+	position: absolute;
+	top: 50px;
+	right: 130px;
+}
+
+#goalContainer{
+	width: 390px;
+	margin: auto;
+}
+
+#goalBar{
+	font-size: 60px;
+}
+
+#goalBar i:nth-child(1) {
+	float: left;
+	color: #BDC3C7;
+}
+
+#goalBar i:nth-child(2) {
+	float: right;
+}
+
+#goalBar #midBar{
+	width: 270px;
+	height: 14px;
+}
+
+#goalBar #midBar.background{
+	width: 270px;
+	margin-top: 0px;
+	margin-left: 60px;
+	border-bottom: 9px solid black;
+}
+
+#goalBar #midBar.result{
+	width: 0px;
+	margin-top: -14px;
+	margin-left: 60px;
+	border-bottom: 9px solid #BDC3C7;
+}
+
+#goalBar #goal{
+	position: absolute;
+	font-size: 24px;
+	font-weight: bold;
+	right: 53px;
+	margin-top: 30px;
+}
+
+#goalBar #bust{
+	position: absolute;
+	font-size: 24px;
+	left: 50px;
+	margin-top: -60px;
+}
