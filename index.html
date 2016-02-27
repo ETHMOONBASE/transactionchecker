@@ -29,9 +29,33 @@
                 </div>
             </div>
 
-            <div id="devTests">
-            	<p>Set cashout:</p>
-            	<input type="number" id="goalInput" step="0.01" min="1">
+            <div id="betControl">
+                <div id="betButton">Login to Play</div>
+                <div id="controlsArea">
+                    <span id="settingButton">Settings</span>
+                    <span id="profileButton">Profile</span>
+                </div>
+            </div>
+
+            <div id="loginModal" class="ui basic modal">
+                <i class="close icon"></i>
+                <div class="header">Login</div>
+                <div class="content">
+                    Service not available. (Yet)
+                </div>
+            </div>
+
+            <div id="settingsModal" class="ui basic modal">
+                <i class="close icon"></i>
+                <div class="header">Settings</div>
+                <div class="content">
+                    <div class="ui form">
+                        <div class="inline field">
+                            <label>Set cashout: </label>
+                            <input type="number" id="goalInput" step="0.01" min="1">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
