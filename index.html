@@ -11,6 +11,7 @@
         <script type="text/javascript" src="https://oss.maxcdn.com/socket.io-client/1.3.2/socket.io.min.js"></script>
         <script type="text/javascript" src="https://oss.maxcdn.com/jquery/2.1.4/jquery.min.js"></script>
         <script type="text/javascript" src="https://oss.maxcdn.com/semantic-ui/2.1.7/semantic.min.js"></script>
+        <script type="text/javascript" src="lib/js/fingerprint2.min.js"></script>
     </head>
     
     <body>
@@ -41,7 +42,20 @@
                 <i class="close icon"></i>
                 <div class="header">Login</div>
                 <div class="content">
-                    Service not available. (Yet)
+                    <form id="loginForm" class="ui form" method="POST" onsubmit="return false;">
+                        <input id="fp" name="fp" type="hidden" value="">
+                        <div class="field">
+                            <label>Username</label>
+                            <input type="text" id="usernameInput" name="username">
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <input type="password" id="pwdInput" name="password">
+                        </div>
+                        <button id="connectionButton" class="ui left floated large button">Connect</button>
+                        <!--<a id="registerButton" class="ui right floated inverted large button">Register</a>-->
+                    </form>
+                    <script>new Fingerprint2().get(function(fp){document.getElementById('fp').setAttribute('value',fp);});</script>
                 </div>
             </div>
 

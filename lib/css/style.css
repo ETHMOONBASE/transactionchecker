@@ -7,8 +7,15 @@ html, body{
     overflow: hidden;
 }
 
-.ui.form label{
+.ui.form .field label{
 	color: white !important;
+}
+.ui.form .field.error label{
+    color: #E74C3C !important;
+}
+.ui.form .field.error input{
+    background-color: #FFE2E2 !important;
+        border-color: #E09E9E !important;
 }
 
 #gameContent{
